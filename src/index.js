@@ -28,6 +28,12 @@ class Board extends React.Component {
             xIsNext: !this.state.xIsNext
         });
     }
+    renderSquare(i) {
+        return <Square 
+            onClick={() => this.handleClick(i)} 
+            value={this.state.squares[i]}
+        />
+    }
     render() {
         return(
             <div>
@@ -41,11 +47,15 @@ class Board extends React.Component {
                     value={this.state.squares[1]}
                 />
                 <Square 
-                    onClick={() => this.handleClick(3)} 
-                    value={this.state.squares[3]}
+                    onClick={() => this.handleClick(2)} 
+                    value={this.state.squares[2]}
                 />
                 </div>
                 <div className="board-row">
+                <Square 
+                    onClick={() => this.handleClick(3)} 
+                    value={this.state.squares[3]}
+                />
                 <Square 
                     onClick={() => this.handleClick(4)} 
                     value={this.state.squares[4]}
@@ -54,24 +64,11 @@ class Board extends React.Component {
                     onClick={() => this.handleClick(5)} 
                     value={this.state.squares[5]}
                 />
-                <Square 
-                    onClick={() => this.handleClick(6)} 
-                    value={this.state.squares[6]}
-                />
                 </div>
                 <div className="board-row">
-                <Square 
-                    onClick={() => this.handleClick(7)} 
-                    value={this.state.squares[7]}
-                />
-                <Square 
-                    onClick={() => this.handleClick(8)} 
-                    value={this.state.squares[8]}
-                />
-                <Square 
-                    onClick={() => this.handleClick(9)} 
-                    value={this.state.squares[9]}
-                />
+                {this.renderSquare(6)}
+                {this.renderSquare(7)}
+                {this.renderSquare(8)}
                 </div>
             </div>            
         );
