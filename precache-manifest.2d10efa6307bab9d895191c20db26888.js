@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60a4ef1ebfc3f20d4189d505ad926eca",
+    "revision": "28b60439a7d2ca0134f650f73275a8fe",
     "url": "/andrzej-stasinski/react-game-circle-and-cross/index.html"
   },
   {
-    "revision": "268de11af3d941614610",
-    "url": "/andrzej-stasinski/react-game-circle-and-cross/static/css/main.3f1b6b09.chunk.css"
+    "revision": "3e4d5f0b0175b451e8d3",
+    "url": "/andrzej-stasinski/react-game-circle-and-cross/static/css/main.21dfe51f.chunk.css"
   },
   {
     "revision": "e49c8a0cb1448da2cf67",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/andrzej-stasinski/react-game-circle-and-cross/static/js/2.224a4f2e.chunk.js.LICENSE"
   },
   {
-    "revision": "268de11af3d941614610",
+    "revision": "3e4d5f0b0175b451e8d3",
     "url": "/andrzej-stasinski/react-game-circle-and-cross/static/js/main.7fbff5c1.chunk.js"
   },
   {
