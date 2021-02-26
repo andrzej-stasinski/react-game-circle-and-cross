@@ -7,3 +7,7 @@
 
 #### install game
 * npm install & npm start
+
+#### image if the game
+
+<img src='image.png' alt='img' />
