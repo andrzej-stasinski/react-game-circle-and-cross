@@ -4,17 +4,18 @@ import plumSound from './sounds/plum.mp3'
 import plamSound from './sounds/plam.wav'
 import bumSound from './sounds/bum.mp3'
 import winSound from './sounds/win.wav'
+import endSound from './sounds/end.mp3'
 
 class Board extends React.Component {
     state = {
-            squares: Array(9).fill(null),
-            xIsNext: true
+        squares: Array(9).fill(null),
+        xIsNext: true,
+        countMove: 0,
     }
 
     handleClick(i) {
         const squares = this.state.squares.slice();
-        console.log(squares)
-        console.log(squares[i])
+        // console.log(squares)
 
         if(this.findWinner(squares)) {
             return
@@ -24,20 +25,26 @@ class Board extends React.Component {
             // sounds
             const plum = new Audio(plumSound)
             const plam = new Audio(plamSound)
-            this.state.xIsNext ? plum.play() : plam.play() 
-
+            this.state.xIsNext ? plum.play() : plam.play()
+            
             squares[i] = this.state.xIsNext ? 'X' : 'O';
             this.setState({
                 squares: squares,
-                xIsNext: !this.state.xIsNext
+                xIsNext: !this.state.xIsNext,
+                countMove: this.state.countMove + 1,
             }, () => {
-                if(this.findWinner(this.state.squares)) {
+                const winGame = this.findWinner(this.state.squares)
+                if(winGame) {
                     const win = new Audio(winSound)
                     win.play()
                 }
+                if(this.state.countMove === 9 && !winGame) {
+                    const endGame = new Audio(endSound)
+                    endGame.play()
+                }
             })
         } else {
-            console.log('Cant click here')
+            // console.log('Cant click here')
             const bum = new Audio(bumSound)
             bum.play()
         }
@@ -64,7 +71,6 @@ class Board extends React.Component {
         for(let i=0; i<lines.length; i++) {
             const [x, y, z] = lines[i]
             if(squares[x] === squares[y] && squares[x] === squares[z]) {
-                console.log(squares[x])
                 return squares[x]
             }
         }
@@ -72,19 +78,20 @@ class Board extends React.Component {
     }
     render() {
         const winner = this.findWinner(this.state.squares)
-        {winner ? console.log('Winner player: ' + winner) : console.log('no won')}
 
-        const playerMove = winner 
+        let playerMove = winner 
             ? (
             'Winner is player: ' + winner
             ) 
-            : ('Player movement: ' + (this.state.xIsNext ? 'X' : 'O')
+            : this.state.countMove === 9 
+                ? ('Game over')
+                : ('Player movement: ' + (this.state.xIsNext ? 'X' : 'O')
             )
-        
-        // const playerMove = 'Player movement: ' + (this.state.xIsNext ? 'X' : 'O')
+
         return(
             <div>
-                <h3>{playerMove}</h3>
+                <h2 
+                >{playerMove}</h2>
                 <div className="board-row">
                     <Square 
                         onHandleClick={() => this.handleClick(0)} 
