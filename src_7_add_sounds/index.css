@@ -1,0 +1,29 @@
+* {
+  padding: 0;margin: 0;
+}
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  color: #333;
+}
+.game {
+  margin: 0 auto;
+  width: 240px;
+}
+.header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.board-row {
+  display: flex;
+}
+.Square {
+  color: red;
+  border: 1px solid brown;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xxx-large;
+}
