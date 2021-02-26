@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/andrzej-stasinski/react-game-circle-and-cross/static/css/main.3f1b6b09.chunk.css",
+    "main.js": "/andrzej-stasinski/react-game-circle-and-cross/static/js/main.7fbff5c1.chunk.js",
+    "main.js.map": "/andrzej-stasinski/react-game-circle-and-cross/static/js/main.7fbff5c1.chunk.js.map",
+    "runtime-main.js": "/andrzej-stasinski/react-game-circle-and-cross/static/js/runtime-main.13072bd8.js",
+    "runtime-main.js.map": "/andrzej-stasinski/react-game-circle-and-cross/static/js/runtime-main.13072bd8.js.map",
+    "static/js/2.224a4f2e.chunk.js": "/andrzej-stasinski/react-game-circle-and-cross/static/js/2.224a4f2e.chunk.js",
+    "static/js/2.224a4f2e.chunk.js.map": "/andrzej-stasinski/react-game-circle-and-cross/static/js/2.224a4f2e.chunk.js.map",
+    "index.html": "/andrzej-stasinski/react-game-circle-and-cross/index.html",
+    "precache-manifest.1334268b21572ccf1e89250608b06ba2.js": "/andrzej-stasinski/react-game-circle-and-cross/precache-manifest.1334268b21572ccf1e89250608b06ba2.js",
+    "service-worker.js": "/andrzej-stasinski/react-game-circle-and-cross/service-worker.js",
+    "static/css/main.3f1b6b09.chunk.css.map": "/andrzej-stasinski/react-game-circle-and-cross/static/css/main.3f1b6b09.chunk.css.map",
+    "static/js/2.224a4f2e.chunk.js.LICENSE": "/andrzej-stasinski/react-game-circle-and-cross/static/js/2.224a4f2e.chunk.js.LICENSE",
+    "static/media/bum.mp3": "/andrzej-stasinski/react-game-circle-and-cross/static/media/bum.7205563c.mp3",
+    "static/media/plam.wav": "/andrzej-stasinski/react-game-circle-and-cross/static/media/plam.ebda6c04.wav",
+    "static/media/plum.mp3": "/andrzej-stasinski/react-game-circle-and-cross/static/media/plum.5baac27f.mp3",
+    "static/media/win.wav": "/andrzej-stasinski/react-game-circle-and-cross/static/media/win.5b88b303.wav"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.13072bd8.js",
+    "static/js/2.224a4f2e.chunk.js",
+    "static/css/main.3f1b6b09.chunk.css",
+    "static/js/main.7fbff5c1.chunk.js"
+  ]
+}
