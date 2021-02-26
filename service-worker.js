@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/andrzej-stasinski/react-game-circle-and-cross/precache-manifest.2d10efa6307bab9d895191c20db26888.js"
+  "/andrzej-stasinski/react-game-circle-and-cross/precache-manifest.081525a9fa7d5a22f48e7f4e0986ad2b.js"
 );
 
 self.addEventListener('message', (event) => {
