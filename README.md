@@ -11,3 +11,6 @@
 #### image if the game
 
 <img src='image.png' alt='img' />
+
+#### try game
+<a href='https://andrzej-stasinski.github.io/react-game-circle-and-cross/' target="_blank">link to game</a>
